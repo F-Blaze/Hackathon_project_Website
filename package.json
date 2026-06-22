@@ -1,0 +1,16 @@
+{
+  "name": "circuitmentor-ai",
+  "version": "1.0.0",
+  "private": true,
+  "description": "A personalized AI-style hardware mentor for beginner electronics, robotics, IoT, automation, and computer vision projects.",
+  "type": "module",
+  "scripts": {
+    "dev": "node server.mjs",
+    "start": "node server.mjs",
+    "build": "node scripts/build.mjs"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "license": "MIT"
+}

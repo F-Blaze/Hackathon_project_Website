@@ -1,0 +1,309 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="CircuitMentor AI turns your dream hardware project into a safe, personalized learning path."
+    />
+    <title>CircuitMentor AI — Build what you imagine</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@500;600;700;800&family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+      media="print"
+      onload="this.media='all'"
+    />
+    <noscript><link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" /></noscript>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <a class="brand" href="#home" aria-label="CircuitMentor AI home">
+        <span class="brand-mark" aria-hidden="true"><span></span></span>
+        <span>CircuitMentor <em>AI</em></span>
+      </a>
+      <nav class="topnav" aria-label="Primary navigation">
+        <a href="#how-it-works">How it works</a>
+        <a href="#paths">Paths</a>
+        <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Switch to dark mode">
+          <span class="theme-icon" aria-hidden="true">☾</span>
+          <span class="theme-label">Dark</span>
+        </button>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero" id="home">
+        <div class="hero-copy">
+          <div class="eyebrow"><span></span> Your project. Your pace. A path that fits.</div>
+          <h1>Build the hardware<br /><i>you keep imagining.</i></h1>
+          <p class="hero-subtitle">Turn your dream hardware project into a personalized learning path.</p>
+          <p class="hero-message">
+            Describe what you want to build. CircuitMentor AI learns your skill level, budget, parts, and
+            learning style, then creates a safe path with lessons, direct resources, quizzes, videos, and build steps.
+          </p>
+          <div class="hero-actions">
+            <button class="button primary" id="start-project" type="button">Start my project <span>→</span></button>
+            <button class="button secondary" id="try-demo" type="button">Try the robot demo</button>
+          </div>
+          <div class="trust-row" aria-label="Product principles">
+            <span><b>✓</b> Beginner-first</span>
+            <span><b>✓</b> Budget-aware</span>
+            <span><b>✓</b> Safety-gated</span>
+          </div>
+        </div>
+
+        <div class="mentor-preview" aria-label="Example personalized roadmap">
+          <div class="preview-orbit orbit-one"></div>
+          <div class="preview-orbit orbit-two"></div>
+          <div class="preview-card">
+            <div class="preview-head">
+              <div>
+                <span class="preview-kicker">YOUR ROADMAP</span>
+                <h2>Vision rover</h2>
+              </div>
+              <span class="status-pill">Personalized</span>
+            </div>
+            <div class="preview-progress"><span></span></div>
+            <div class="preview-meta"><span>2 of 8 skills ready</span><strong>25%</strong></div>
+            <div class="preview-step done">
+              <span class="step-dot">✓</span>
+              <div><small>FOUNDATION</small><b>Signals &amp; safe circuits</b></div>
+              <em>18 min</em>
+            </div>
+            <div class="preview-step active">
+              <span class="step-dot">02</span>
+              <div><small>BUILD</small><b>Make a sensor see</b></div>
+              <em>35 min</em>
+            </div>
+            <div class="preview-step locked">
+              <span class="step-dot">03</span>
+              <div><small>NEXT</small><b>Give the robot motion</b></div>
+              <em>🔒</em>
+            </div>
+            <div class="preview-coach"><span class="coach-avatar">CM</span><p><b>Why this first?</b><br />A safe sensor win gives you the exact signal logic your rover will use later.</p></div>
+          </div>
+          <div class="floating-note note-one"><span>▣</span><div><b>Uses your Pico W</b><small>No new board needed</small></div></div>
+          <div class="floating-note note-two"><span>✓</span><div><b>Safety check ready</b><small>Review before power</small></div></div>
+        </div>
+      </section>
+
+      <section class="proof-strip" id="how-it-works">
+        <p>One dream becomes a buildable plan</p>
+        <div class="proof-flow">
+          <span><b>01</b> Describe it</span><i>→</i>
+          <span><b>02</b> Shape your profile</span><i>→</i>
+          <span><b>03</b> Choose a route</span><i>→</i>
+          <span><b>04</b> Learn &amp; build</span>
+        </div>
+      </section>
+
+      <section class="workspace-section" id="interview">
+        <div class="section-heading">
+          <span class="section-number">01</span>
+          <div>
+            <p class="eyebrow">DREAM PROJECT INTERVIEW</p>
+            <h2>What would you love to build?</h2>
+            <p>Start messy. Your mentor will turn the idea into useful questions.</p>
+          </div>
+        </div>
+        <form class="form-card interview-form" id="interview-form">
+          <label class="field">
+            <span>What should CircuitMentor call you? <em>Optional</em></span>
+            <input id="user-name" name="userName" placeholder="Your first name" autocomplete="given-name" />
+            <small>If you leave this blank, we’ll call you Maker.</small>
+          </label>
+          <label class="field field-large">
+            <span>Describe your dream hardware project in your own words.</span>
+            <textarea id="dream-project" name="dreamProject" rows="5" required placeholder="I want to build a robot that avoids obstacles and later uses a camera to recognize objects."></textarea>
+            <small>Include the result you want—even if you do not know which parts or code it needs yet.</small>
+          </label>
+          <div class="form-footer">
+            <p><span>✦</span> Your answer shapes every lesson, purchase, and safety check.</p>
+            <button class="button primary" type="submit">Continue to my questions <span>→</span></button>
+          </div>
+        </form>
+      </section>
+
+      <section class="workspace-section hidden" id="customize">
+        <div class="section-heading">
+          <span class="section-number">02</span>
+          <div>
+            <p class="eyebrow">CUSTOMIZE YOUR PATH</p>
+            <h2>Let’s make this fit your real life.</h2>
+            <p id="customize-intro">A few honest answers help your mentor avoid generic advice.</p>
+          </div>
+        </div>
+        <div class="mentor-question" id="dynamic-question"></div>
+        <form class="form-card profile-form" id="profile-form">
+          <label class="field full">
+            <span>What have you already built or learned in hardware?</span>
+            <textarea id="hardware-experience" rows="3" placeholder="Example: I wired an LED once, but I have never used sensors or motors."></textarea>
+            <small>“Nothing yet” is a perfectly useful answer.</small>
+          </label>
+          <label class="field full">
+            <span>What coding languages or coding experience do you have? Explain in detail.</span>
+            <textarea id="coding-experience" rows="4" placeholder="Example: I know basic Python, loops, functions, and lists. I have not used Arduino C++ or MicroPython yet."></textarea>
+            <small>This helps us explain code at the right level instead of guessing.</small>
+          </label>
+
+          <fieldset class="field full chip-field">
+            <legend>How do you prefer to learn? <em>Select all that fit</em></legend>
+            <p class="field-help">Choose more than one—we will mix them across your roadmap.</p>
+            <div class="chip-grid" id="learning-preferences"></div>
+          </fieldset>
+
+          <fieldset class="field full chip-field">
+            <legend>What parts do you already own? <em>Select all that fit</em></legend>
+            <p class="field-help">Owned parts are used before we recommend new purchases.</p>
+            <div class="chip-grid parts-grid" id="existing-parts"></div>
+            <label class="nested-field">
+              <span>Other custom parts</span>
+              <input id="custom-parts" placeholder="Example: HC-SR04 sensor, two TT motors, 5V USB battery bank" />
+            </label>
+          </fieldset>
+
+          <div class="field-grid">
+            <label class="field">
+              <span>What is your budget?</span>
+              <select id="budget">
+                <option value="Under $25">Under $25</option>
+                <option value="$25–$50" selected>$25–$50</option>
+                <option value="$50–$100">$50–$100</option>
+                <option value="$100+">$100+</option>
+                <option value="Use only what I own">Use only what I own</option>
+              </select>
+              <small>We’ll treat this as a ceiling, not a spending target.</small>
+            </label>
+            <label class="field">
+              <span>How much time can you spend each week?</span>
+              <select id="time-per-week">
+                <option>Less than 1 hour</option>
+                <option selected>1–3 hours</option>
+                <option>3–5 hours</option>
+                <option>5+ hours</option>
+              </select>
+              <small>Your step sizes and estimate will adapt.</small>
+            </label>
+            <label class="field">
+              <span>Can an experienced person check your wiring?</span>
+              <select id="mentor-access">
+                <option value="yes">Yes, usually</option>
+                <option value="sometimes" selected>Sometimes</option>
+                <option value="no">Not currently</option>
+              </select>
+              <small>Human review is required for higher-risk steps.</small>
+            </label>
+            <label class="field">
+              <span>How comfortable are you with hardware safety?</span>
+              <select id="safety-comfort">
+                <option value="new" selected>New — explain every check</option>
+                <option value="some">Some experience</option>
+                <option value="comfortable">Comfortable with low-voltage circuits</option>
+              </select>
+              <small>We never treat confidence as a safety certificate.</small>
+            </label>
+          </div>
+
+          <label class="field full">
+            <span>What part of this project confuses you most?</span>
+            <textarea id="confusion" rows="3" placeholder="Example: I do not know how the camera and motors can run together."></textarea>
+            <small>Your roadmap will slow down and add practice around this point.</small>
+          </label>
+          <div class="form-footer">
+            <p><span>◎</span> You can switch learning path types at any time.</p>
+            <button class="button primary" type="submit">Create my path options <span>→</span></button>
+          </div>
+        </form>
+      </section>
+
+      <section class="workspace-section hidden" id="paths">
+        <div class="section-heading path-heading">
+          <span class="section-number">03</span>
+          <div>
+            <p class="eyebrow">CHOOSE YOUR LEARNING PATH</p>
+            <h2>Four routes. Four genuinely different plans.</h2>
+            <p>Choose a starting route. Switching later regenerates the entire roadmap immediately.</p>
+          </div>
+        </div>
+        <div class="path-grid" id="path-grid"></div>
+      </section>
+
+      <section class="roadmap-shell hidden" id="roadmap">
+        <div class="roadmap-top" id="roadmap-top"></div>
+        <div class="roadmap-layout">
+          <aside class="roadmap-sidebar">
+            <div class="sidebar-card">
+              <span class="sidebar-label">SWITCH ROUTE</span>
+              <div id="path-switcher"></div>
+            </div>
+            <div class="sidebar-card" id="inventory-summary"></div>
+            <div class="sidebar-card safety-mini">
+              <span class="sidebar-label">SAFETY PROMISE</span>
+              <p>CircuitMentor teaches and checks. A qualified human reviews risky wiring before power.</p>
+              <a href="#safety-gate">View safety gate →</a>
+            </div>
+          </aside>
+          <div class="roadmap-content">
+            <div class="roadmap-content-head">
+              <div><span class="eyebrow">YOUR PERSONALIZED ROADMAP</span><h2 id="roadmap-title"></h2></div>
+              <span class="resource-count" id="resource-count"></span>
+            </div>
+            <div class="step-list" id="step-list"></div>
+          </div>
+        </div>
+
+        <section class="roadmap-subsection" id="parts-section">
+          <div class="subsection-heading">
+            <div><span class="eyebrow">MISSING PARTS + BUYING LINKS</span><h2>Buy only when the path needs it.</h2></div>
+            <p>Owned parts are excluded. Price links help you compare current prices; they are not claims of the lowest price.</p>
+          </div>
+          <div class="parts-list" id="parts-list"></div>
+        </section>
+
+        <section class="roadmap-subsection safety-gate" id="safety-gate"></section>
+      </section>
+    </main>
+
+    <footer>
+      <a class="brand footer-brand" href="#home"><span class="brand-mark"><span></span></span><span>CircuitMentor <em>AI</em></span></a>
+      <p>Build with curiosity. Power with care.</p>
+      <small>Guidance is educational and does not certify electrical safety.</small>
+    </footer>
+
+    <button class="chat-launcher" id="chat-launcher" type="button" aria-label="Open CircuitMentor chatbot">
+      <span>CM</span><b>Ask your mentor</b><i>✦</i>
+    </button>
+    <aside class="chat-panel" id="chat-panel" aria-hidden="true">
+      <div class="chat-head">
+        <div><span class="coach-avatar">CM</span><div><b>CircuitMentor</b><small><i></i> Knows your current path</small></div></div>
+        <button id="chat-close" type="button" aria-label="Close chatbot">×</button>
+      </div>
+      <div class="chat-context" id="chat-context">Start a project so I can personalize my help.</div>
+      <div class="chat-messages" id="chat-messages">
+        <div class="message bot">Tell me what you want to build, and I’ll help you turn uncertainty into the next small, safe win.</div>
+      </div>
+      <div class="quick-prompts" id="quick-prompts">
+        <button type="button">Why am I learning this?</button>
+        <button type="button">What should I buy next?</button>
+        <button type="button">Explain this more simply.</button>
+        <button type="button">Quiz me.</button>
+      </div>
+      <label class="upload-label">
+        <input type="file" id="image-upload" accept="image/*" />
+        <span>＋ Add circuit photo</span>
+      </label>
+      <div id="image-preview-wrap" class="image-preview-wrap hidden"></div>
+      <form class="chat-form" id="chat-form">
+        <input id="chat-input" aria-label="Ask CircuitMentor" placeholder="Ask about this step…" autocomplete="off" />
+        <button type="submit" aria-label="Send">↑</button>
+      </form>
+    </aside>
+
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+    <script type="module" src="./app.js"></script>
+  </body>
+</html>
